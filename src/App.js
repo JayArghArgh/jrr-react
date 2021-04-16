@@ -4,31 +4,34 @@ import Header from "./Components/Header";
 import About from "./Components/About";
 import Elevator from "./Components/Elevator";
 import Footer from "./Components/Footer";
+import MySkew from "./Components/MySkew";
+import { HashRouter as Router, Route, Switch } from "react-router-dom";
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <header className="bg-black">
-        <Header />
-      </header>
-
-      <div className="skew-c-white"></div>
-      <div className="colour-block-white"></div>
+      <Header />
+      <MySkew />
 
       <div className="main">
-        <div className="container">
+        <Router>
+          <Switch>
+            <Route exact path="/" component={Elevator} />
+            <Route exact path="/portfolio" component={Footer} />
+            <Route exact path="/about" component={About} />
+            <Route component={Elevator} />
+          </Switch>
           <div className="article" id="main-article">
-            <Elevator />
-            {/*The main items load here*/}
-            <About />
           </div>
-        </div>
+          <div className="container">
+          </div>
+        </Router>
 
-
-        <section id="portfolio">
-          <div id="skew-lower" className="skew-c"></div>
-          <div className="wave-black-top portfolio"></div>
-        </section>
+        {/*<section id="portfolio">*/}
+        {/*  <div id="skew-lower" className="skew-c"></div>*/}
+        {/*  <div className="wave-black-top portfolio"></div>*/}
+        {/*</section>*/}
 
       </div>
       <Footer />
