@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Emplectory",
+    "image": "img/emplectory.png",
+    "image_id": "image_1",
+    "image_alt": "Employee Directory",
+    "tech_used": ["React", "Axios", "API"],
+    "repo": {
+      "repo_name": "GitHub",
+      "repo_url": "https://github.com/FSC-Portfolio/emplectory"
+    },
+    "deploy": {
+      "deploy_name": "GitHub",
+      "deploy_url": "https://fsc-portfolio.github.io/emplectory/"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Betti",
+    "image": "img/betti_bet.png",
+    "image_id": "image_2",
+    "image_alt": "Betti!",
+    "tech_used": ["MySQL + Sequelize", "Bootstrap + Handlebars", "Node + Express"],
+    "repo": {
+      "repo_name": "GitHub",
+      "repo_url": "https://github.com/JayArghArgh/Project-2"
+    },
+    "deploy": {
+      "deploy_name": "Heroku",
+      "deploy_url": "http://www.bettibet.com"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Weather Search",
+    "image": "img/weather_forecast.png",
+    "image_id": "image_3",
+    "image_alt": "Weather information website",
+    "tech_used": ["Google Places API", "OpenWeather API", "jQuery and Bootstrap"],
+    "repo": {
+      "repo_name": "GitHub",
+      "repo_url": "https://github.com/JayArghArgh/weather-dashboard"
+    },
+    "deploy": {
+      "deploy_name": "GitHub",
+      "deploy_url": "https://jayarghargh.github.io/weather-dashboard/"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Eat Da Burger.",
+    "image": "img/eat_da_burger.png",
+    "image_id": "image_4",
+    "image_alt": "Eat Da Burger.",
+    "tech_used": ["Express, Handlebars", "MySql ORM", "Heroku"],
+    "repo": {
+      "repo_name": "GitHub",
+      "repo_url": "https://github.com/JayArghArgh/eat-da-burger"
+    },
+    "deploy": {
+      "deploy_name": "Heroku",
+      "deploy_url": "https://polar-castle-27980.herokuapp.com/"
+    }
+  }
+]

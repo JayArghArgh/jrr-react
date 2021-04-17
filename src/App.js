@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Header from "./Components/Header";
 import About from "./Components/About";
@@ -6,37 +5,44 @@ import Elevator from "./Components/Elevator";
 import Footer from "./Components/Footer";
 import MySkew from "./Components/MySkew";
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
+import React, { Component } from "react";
 // import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import myPortfolio from "./Components/myPortfolio.json";
+import Portfolio from "./Components/Portfolio";
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-      <MySkew />
+class App extends Component {
+  // Setting this.state.friends to the friends json array
+  state = {
+    myPortfolio
+  };
 
-      <div className="main">
-        <Router>
-          <Switch>
-            <Route exact path="/" component={Elevator} />
-            <Route exact path="/portfolio" component={Footer} />
-            <Route exact path="/about" component={About} />
-            <Route component={Elevator} />
-          </Switch>
-          <div className="article" id="main-article">
-          </div>
-          <div className="container">
-          </div>
-        </Router>
+  render () {
+    // console.log(this.state.portfolio);
+    return (
+      <div className="App">
+        <Header/>
+        <MySkew/>
 
-        {/*<section id="portfolio">*/}
-        {/*  <div id="skew-lower" className="skew-c"></div>*/}
-        {/*  <div className="wave-black-top portfolio"></div>*/}
-        {/*</section>*/}
+        <div className="main">
+          <Router>
+            <Switch>
+              <Route exact path="/" component={Elevator}/>
+              <Route exact path="/portfolio" render={props => <Portfolio portfolioItems={this.state.myPortfolio} {...props} />} />
+              {/*<Route exact path="/portfolio" component={Portfolio}/>*/}
+              <Route exact path="/about" component={About}/>
+              <Route component={Elevator}/>
+            </Switch>
+            <div className="article" id="main-article">
+            </div>
+            <div className="container">
+            </div>
+          </Router>
 
+        </div>
+        <Footer/>
       </div>
-      <Footer />
-    </div>
-  );
+    );
+  };
 }
 
 export default App;

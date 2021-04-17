@@ -7,7 +7,7 @@ const Elevator = (props) => {
         <div className={"elevator"} >
           <h1>JayArghArgh - Full Stack Developer</h1>
           <div class="testimonial-quote group">
-            <img src="img/JR_profile_sml.png" />
+            <img src="img/JR_profile_sml.png" alt="Justin R Reid"/>
               <div class="quote-container">
                 <blockquote>
                   <p>I enjoy identifying opportunities to reduce costs, increase efficiencies, and drive new ways of working.

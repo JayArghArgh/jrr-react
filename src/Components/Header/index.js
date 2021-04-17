@@ -26,11 +26,11 @@ const Header = (props) => {
                     className="fas fa-book-dead fa-3x"></i></a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="https://github.com/JayArghArgh" target="_blank"><i
+                  <a className="nav-link" href="https://github.com/JayArghArgh" target="_blank" rel="noreferrer"><i
                     className="fab fa-github fa-3x"></i></a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="https://www.linkedin.com/in/jayarghargh/" target="_blank"><i
+                  <a className="nav-link" href="https://www.linkedin.com/in/jayarghargh/" target="_blank" rel="noreferrer"><i
                     className="fab fa-linkedin fa-3x"></i></a>
                 </li>
                 <li className="nav-item">
@@ -39,7 +39,7 @@ const Header = (props) => {
                 <li className="nav-item">
                   <a className="nav-link"
                      href="https://github.com/JayArghArgh/jayarghargh.github.io/blob/master/docs/CV_JR_FullStack_2021_R01.pdf"
-                     target="_blank"><i className="far fa-file fa-3x"></i></a>
+                     target="_blank" rel="noreferrer"><i className="far fa-file fa-3x"></i></a>
                 </li>
               </ul>
             </div>
