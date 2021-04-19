@@ -241,12 +241,6 @@ html {
     text-align: right;
 }
 
-/* Modals */
-ul.fa-ul li a {
-    text-decoration: none;
-}
-
-
 @media only screen and (max-width: 600px) {
     #main-article {
         padding-top: 12%;
@@ -288,22 +282,3 @@ ul.fa-ul li a {
 /*.main {*/
 /*    margin-bottom: 200px;*/
 /*}*/
-
-
-.footer {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    background: black;
-    color: whitesmoke;
-    /*position: absolute;*/
-    /*bottom: 0;*/
-    width: 100%;
-}
-
-.footer a {
-    color: whitesmoke;
-}
-
-.footer a:hover {
-    color: grey;
-}

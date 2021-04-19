@@ -1,0 +1,49 @@
+[
+  {
+    "id": 1,
+    "title": "Technical Skills",
+    "content": [
+      {
+        "title": "Languages",
+        "content": "Python, Java, JavaScript ES6+, CSS3, HTML5."
+      },
+      {
+        "title": "Applications",
+        "content": "PostGreSQL, MySQL, Figma, Docker, ArcGIS, CAD, Trimble Business Center."
+      },
+      {
+        "title": "Tools",
+        "content":"jQuery, Bootstrap, Materialize, Sequelize, Handlebars"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Relevant Projects",
+    "content": [
+      {
+        "title": "Betti",
+        "content": "Betti is a site enabling users to bet against each other, tracking their bets and their respective outcomes. The Betti frontend was wireframed in Figma using latest industry design principles, whilstthe backend was built using MySQL, Node, Express, Handlebars Template Engine, and, Sequelize."
+      },
+      {
+        "title": "Hangry",
+        "content": "Hangry is a recipe search web app built with HTML5, CSS3, JavaScript, jQuery, and Materialize. It connects to three separate API’s to return food and wine listings for site users."
+      }
+    ]
+  },
+
+  {
+    "id": 3,
+    "title": "Experience",
+    "content": [
+      {
+        "title": "Betti",
+        "content": "Betti is a site enabling users to bet against each other, tracking their bets and their respective outcomes. The Betti frontend was wireframed in Figma using latest industry design principles, whilstthe backend was built using MySQL, Node, Express, Handlebars Template Engine, and, Sequelize."
+      },
+      {
+        "title": "Hangry",
+        "content": "Hangry is a recipe search web app built with HTML5, CSS3, JavaScript, jQuery, and Materialize. It connects to three separate API’s to return food and wine listings for site users."
+      }
+    ]
+  }
+]

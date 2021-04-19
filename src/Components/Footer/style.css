@@ -1,0 +1,17 @@
+.footer {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background: black;
+    color: whitesmoke;
+    /*position: absolute;*/
+    /*bottom: 0;*/
+    width: 100%;
+}
+
+.footer a {
+    color: whitesmoke;
+}
+
+.footer a:hover {
+    color: grey;
+}

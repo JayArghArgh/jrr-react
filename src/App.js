@@ -24,22 +24,23 @@ class App extends Component {
         <MySkew/>
 
         <div className="main">
-          <Router>
-            <Switch>
-              <Route exact path="/" component={Elevator}/>
-              <Route exact path="/portfolio" render={props => <Portfolio portfolioItems={this.state.myPortfolio} {...props} />} />
-              {/*<Route exact path="/portfolio" component={Portfolio}/>*/}
-              <Route exact path="/about" component={About}/>
-              <Route component={Elevator}/>
-            </Switch>
-            <div className="article" id="main-article">
-            </div>
+
+          <div className="article" id="main-article">
             <div className="container">
+              <Router>
+                <Switch>
+                  <Route exact path="/" component={Elevator}/>
+                  <Route exact path="/portfolio" render={props => <Portfolio portfolioItems={this.state.myPortfolio} {...props} />} />
+                  <Route exact path="/about" component={About}/>
+                  <Route component={Elevator}/>
+                </Switch>
+              </Router>
             </div>
-          </Router>
+          </div>
 
         </div>
         <Footer/>
+
       </div>
     );
   };
